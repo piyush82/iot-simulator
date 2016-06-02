@@ -29,6 +29,19 @@ Once the tool is running, simply drag the collector node through the various par
 ## need more info or want to contribute
 Please contact me at ```piyush DOT harsh AT zhaw DOT ch```.
 
+### Writing your own IoT transmission error model
+Simply add code to the 
+```java
+public static float getErrorFactor(float displacement)
+{
+    //add your algorithm here - return value should be between 0.0 and 100.00
+    //therefore please scale the return probability factor accordingly
+    //input is the displace of the data collector node from sensor node
+
+    return 0.0f;
+}
+```
+
 ## License
 
 this software is licensed under the
