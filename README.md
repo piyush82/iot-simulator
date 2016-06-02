@@ -21,6 +21,11 @@ java -jar target/IoT-Simulator-0.01-jar-with-dependencies.jar
 ## Usage
 Once the tool is running, simply drag the collector node through the various parts of the screen and IoT nodes in the vicinity of the collector node will offload their locally cached data to the collector.
 
+## Philosophy & demo videos
+[![IMAGE ICCLab IoT Toolkit Preview - 1](http://img.youtube.com/vi/LYZsPmeMRgw/0.jpg)](http://www.youtube.com/watch?v=LYZsPmeMRgw "ICCLab IoT Toolkit Preview - 1")
+
+[![IMAGE ICCLab IoT Toolkit Preview - 2](http://img.youtube.com/vi/bgxdvpK8kR0/0.jpg)](http://www.youtube.com/watch?v=bgxdvpK8kR0 "ICCLab IoT Toolkit Preview - 2")
+
 ## need more info or want to contribute
 Please contact me at ```piyush DOT harsh AT zhaw DOT ch```.
 
