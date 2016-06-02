@@ -30,7 +30,7 @@ Once the tool is running, simply drag the collector node through the various par
 Please contact me at ```piyush DOT harsh AT zhaw DOT ch```.
 
 ### Writing your own IoT transmission error model
-Simply add code to the 
+Simply add code to the ErrorModel class and set CustomErrorModel to true in main method.
 ```java
 public static float getErrorFactor(float displacement)
 {
