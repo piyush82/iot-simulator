@@ -30,7 +30,7 @@ this software is licensed under the
 [Apache License version 2.0](https://www.apache.org/licenses/LICENSE-2.0).
 See the file LICENSE.
 
-## Made by
+## Made with love at
 
 <div align="left" >
 <a href='http://blog.zhaw.ch/icclab'>
