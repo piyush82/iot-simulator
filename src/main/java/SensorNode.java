@@ -87,6 +87,7 @@ public class SensorNode implements Runnable
         //calculating the number of messages that is queued
         long delay = System.currentTimeMillis() - lastContact;
         long countPendingMsgs = delay / dataGenerationInterval;
+        long timestamp = System.currentTimeMillis();
         Random rand = new Random(System.currentTimeMillis());
         int errorRate;
         int sendingProb;
@@ -96,7 +97,12 @@ public class SensorNode implements Runnable
 
             try
             {
-                String msg = "source-id: " + id + ", meter-id: 0x11fd, meter-class: 0xA0, value: " + rand.nextInt(128) + ", self-state: low-power, power-consumed: " + rand.nextInt(1000) + " mWatt";
+                if(countPendingMsgs < 0)
+                    timestamp = System.currentTimeMillis();
+                else
+                    timestamp = System.currentTimeMillis() - dataGenerationInterval*countPendingMsgs;
+
+                String msg = "timestamp: " + timestamp + ", source-id: " + id + ", meter-id: 0x11fd, meter-class: 0xA0, value: " + rand.nextInt(128) + ", self-state: low-power, power-consumed: " + rand.nextInt(1000) + " mWatt";
                 if(ErrorModel.getCustomErrorModelState())
                 {
                     errorRate = (int) ErrorModel.getErrorFactor(displacement);

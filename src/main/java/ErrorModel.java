@@ -22,21 +22,21 @@
 
 public class ErrorModel
 {
-    private static boolean isCustomeModelSet;
+    private static boolean isCustomModelSet;
 
-    public static void activateCustomeModel()
+    public static void activateCustomModel()
     {
-        isCustomeModelSet = true;
+        isCustomModelSet = true;
     }
 
     public static boolean getCustomErrorModelState()
     {
-        return isCustomeModelSet;
+        return isCustomModelSet;
     }
 
     public static void deactivateCustomModel()
     {
-        isCustomeModelSet = false;
+        isCustomModelSet = false;
     }
 
     public static float getErrorFactor(float displacement)
