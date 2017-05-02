@@ -56,3 +56,5 @@ See the file LICENSE.
 <img src="https://raw.githubusercontent.com/icclab/hurtle/master/docs/figs/icclab_logo.png" title="IoT simulator" width=248px>
 </a>
 </div>
+
+[![DOI](https://zenodo.org/badge/60262025.svg)](https://zenodo.org/badge/latestdoi/60262025)
